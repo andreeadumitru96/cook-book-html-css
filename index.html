@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta utf-8>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title> Cook book </title>
+</head>
+
+<body>
+    <header>
+        
+        <i class="fa fa-cutlery">
+            <strong> iQuest Cook Book </strong>
+        </i>
+        <nav>
+            <table>
+                <tr>
+                    <td>
+                        <i class="fa fa-plus">
+                            <strong> New recipe </strong>
+                        </i>
+                    </td>
+
+                    <td>
+                        <select class="recipe-selector">
+                            <option value="value2" selected> Select a recipe... </option>
+                            <option value="value1"> Scambled egg omlette </option>     
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="about">
+            <div>
+                <i class="fa fa-info"> About </i>
+            </div>
+            
+            <form>
+                <label for="title"> Recipe title </label>
+                <input type="text" placeholder="Title">
+                <label for="description"> Description </label>
+                <textarea rows="4" cols="50" placeholder="About the recipe"></textarea>
+
+                <label for="portions"> Portions </label>
+                <input type="number" name="portions" id="portions" min="1" max="5" step="1" value="1">
+
+                <label for="time"> Time(mins) </label>
+                <input type="number" name="time" id="time" min="5" max="50" step="5" value="5">
+
+                <label for="dificulty"> Dificulty </label>
+                <input type="number" name="dificulty" id="dificulty" min="1" max="5" step="1" value="1">
+            </form>
+        </section>
+
+        <section class="ingredients">
+            <i class="fa fa-list"> Ingredients </i>
+        </section>
+        <section class="steps">
+
+        </section>
+    </main>
+</body>
+
+</html>
