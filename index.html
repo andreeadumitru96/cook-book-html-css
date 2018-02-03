@@ -5,32 +5,24 @@
     <meta utf-8>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <title> Cook book </title>
+    <title> Cook Book </title>
 </head>
 
 <body>
     <header>
-        
-        <i class="fa fa-cutlery">
-            <strong> iQuest Cook Book </strong>
-        </i>
-        <nav>
-            <table>
-                <tr>
-                    <td>
-                        <i class="fa fa-plus">
-                            <strong> New recipe </strong>
-                        </i>
-                    </td>
+        <article class="header__title-container">
+            <i class="fa fa-cutlery"> iQuest Cook Book </i>  
+        </article>
+    
+        <nav class="header__nav-container">
+            <form class="header__nav-new-recipe">
+                <i class="fa fa-plus"> New recipe </i>
+            </form>
 
-                    <td>
-                        <select class="recipe-selector">
-                            <option value="value2" selected> Select a recipe... </option>
-                            <option value="value1"> Scambled egg omlette </option>     
-                        </select>
-                    </td>
-                </tr>
-            </table>
+            <select class="header__nav-select-recipe">
+                <option selected> Select a recipe... </option>
+                <option> Scambled egg omlette </option>     
+            </select>
         </nav>
 
     </header>
