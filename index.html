@@ -9,7 +9,33 @@
 </head>
 
 <body>
+
     <header>
+        <div class="header__title-container">
+            <h1>
+                <i class="fa fa-cutlery"> iQuest Cook Book </i>
+            </h1>
+        </div>
+    
+        <nav class="header__form-container">
+            <div class="header__form-new-recipe-container">
+                <h2>
+                    <i class="fa fa-plus"></i>
+                    New Recipe
+                </h2>
+            </div>
+            <div class="header__form-select-recipe-container">
+                <form class="header__form-select-recipe-picker">
+                    <select>
+                        <option>Select a recipe...</option>
+                        <option>Scambled egg omlette</option>
+                    </select>
+                </form>
+            </div>
+        </nav>
+        </header>
+    
+    <!-- <header>
         <article class="header__title-container">
             <i class="fa fa-cutlery"> iQuest Cook Book </i>  
         </article>
@@ -18,41 +44,64 @@
             <form class="header__nav-new-recipe">
                 <i class="fa fa-plus"> New recipe </i>
             </form>
-
-            <select class="header__nav-select-recipe">
-                <option selected> Select a recipe... </option>
-                <option> Scambled egg omlette </option>     
-            </select>
+            
+            <form class="header__nav-select-recipe">
+                <select>
+                    <option selected> Select a recipe... </option>
+                    <option> Scambled egg omlette </option>     
+                </select>
+            </form>
+            
         </nav>
 
-    </header>
+    </header> -->
 
-    <main>
-        <section class="about">
-            <div>
+    <main class="main-container">
+        <section class="main__section-about">
+            <section class="main__section-about-title main__standard-section-title--red" >
                 <i class="fa fa-info"> About </i>
-            </div>
+            </section>
             
-            <form>
-                <label for="title"> Recipe title </label>
-                <input type="text" placeholder="Title">
-                <label for="description"> Description </label>
-                <textarea rows="4" cols="50" placeholder="About the recipe"></textarea>
+            <form class="main__section-about-form-container main__standard-section-content--bg--gray">
+                <fieldset class="main__section-about-form-recipe-title">
+                    <label> Recipe title </label>
+                    <input type="text" placeholder="Title">    
+                </fieldset>
 
-                <label for="portions"> Portions </label>
-                <input type="number" name="portions" id="portions" min="1" max="5" step="1" value="1">
+                <fieldset class="main__section-about-form-recipe-description">
+                    <label> Description </label>
+                    <textarea rows="4" cols="50" placeholder="About the recipe"></textarea>
+                </fieldset>
+                
+        
+                <fieldset class="main__section-about-form-recipe-parameters">
+                    <section>
+                        <label> Portions </label>
+                        <input type="number" name="portions" id="portions" min="1" max="5" step="1" value="1">
+                    </section>
+                    
+                    <section>
+                        <label> Time(mins) </label>
+                        <input type="number" name="time" id="time" min="5" max="50" step="5" value="5">
+                    </section>
 
-                <label for="time"> Time(mins) </label>
-                <input type="number" name="time" id="time" min="5" max="50" step="5" value="5">
+                    <section>
+                        <label> Dificulty </label>
+                        <input type="number" name="dificulty" id="dificulty" min="1" max="5" step="1" value="1">
+                    </section>   
+                    
+                </fieldset>
 
-                <label for="dificulty"> Dificulty </label>
-                <input type="number" name="dificulty" id="dificulty" min="1" max="5" step="1" value="1">
+                
             </form>
         </section>
 
-        <section class="ingredients">
-            <i class="fa fa-list"> Ingredients </i>
+        <section class="main__section-ingredients">
+            <section class="main__section-ingredients-title main__standard-section-title--red">
+                <i class="fa fa-list"> Ingredients </i>
+            </section>
         </section>
+
         <section class="steps">
 
         </section>
