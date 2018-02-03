@@ -77,12 +77,12 @@
                 <div class="main__section-about-form-recipe-parameters main__standard-section-fieldset">
                     <fieldset>
                         <label> Portions </label>
-                        <input type="number" name="portions" id="portions" min="1" max="5" step="1" value="1">
+                        <input type="number" name="portions" id="portions" min="1" max="10" step="1" value="1">
                     </fieldset>
                     
                     <fieldset>
                         <label> Time(mins) </label>
-                        <input type="number" name="time" id="time" min="5" max="50" step="5" value="5">
+                        <input type="number" name="time" id="time" min="5" max="120" step="5" value="5">
                     </fieldset>
 
                     <fieldset>
@@ -109,13 +109,57 @@
                         <li><i class="fa fa-angle-double-right"></i> 6pc large free-range eggs </li>
                     </ul>
                 </div>
+
+                <form class="main__section-ingredients-content-form-container main__standard-section-fieldset">
+                    <div class="main__section-ingredients-content-form-quantity">
+                        <input type="number" min="1" placeholder="Qty.">
+                    </div>
+                    <div class="main__section-ingredients-content-form-quantity-type">
+                        <select>
+                            <optgroup>
+                                <option selected> Unit </option>
+                                <option> g </option>
+                                <option> Kg </option>
+                                <option> pc </option>
+                                <option> ml </option>
+                                <option> l </option>
+                                <option> tea spoon(s) </option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h1> of </h1>
+                    </div>
+
+                    <div class "main__section-ingredients-content-form-quantity-ingredient">
+                        <input type="text" placeholder="Ingredient">
+                    </div>
+                </form>
             </section>
         </section>
 
-        <section class="steps">
+        <section class="main__section-steps-container">
+            <section class="main__section-steps-title main__standard-section-title--red">
+                <i class="fa fa-list-ol"> Steps </i>
+            </section>
 
+            <section class="main__standard-section-content">
+                <div class="main__section-steps-content-list-container">
+                    <ol>
+                        <li>  Cook the rice in a pan of boiling salted water according to the packet instructions, then drain and refresh under cold water,leaving it in the colander. </li>
+                        <li> At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes,then carefully remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer. </li>
+                        <li>  Meahwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel and finely chop the garlic and ginger. Place it all in a large frying pan on a medium heat with 1 tablespoon of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally. </li>
+                    </ol>
+                </div>
+            </section>
         </section>
     </main>
+    <footer class="footer-container">           
+        <button class="footer__button-cancel" ><i class="fa fa-trash-o"></i> Cancel </button>
+        <button class="footer__butoon-save-recipe"><i class="fa fa-floppy-o"></i> Save recipe </button>
+            
+    </footer>
 </body>
 
 </html>
