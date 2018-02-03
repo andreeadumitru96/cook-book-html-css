@@ -78,6 +78,7 @@ body {
 }
 
 /* Header section */
+
 header .header__title-container {
     background-color: #d94e44;
     color: white;
@@ -142,10 +143,16 @@ header .header__form-select-recipe-picker > select {
 
 .main__standard-section-content {
     background-color: #f6f4f4;
+    padding: 0px 25px 0px 25px;
 
 }
 
 .main__standard-section-fieldset {
+    padding-top: 25px;
+
+}
+
+.main__standard-section-fieldset:last-child {
     padding-top: 25px;
 
 }
@@ -157,13 +164,10 @@ header .header__form-select-recipe-picker > select {
     width: 100%;
     border-radius: 3px;
     border: 1px solid #d6d4d4;
+    box-sizing: border-box;
 }
 
-.main__standard-section-content {
-    padding: 0px 25px 0px 25px;
-}
-
-.main__standard-section-fieldset > label {
+.main__standard-section-fieldset label {
     font-weight: bold;
 }
 
@@ -172,13 +176,25 @@ header .header__form-select-recipe-picker > select {
 }
 
 .main__section-about-form-recipe-parameters {
-    flex-direction: row;
     display: flex;
+    justify-content: space-between;
 }
 
-.main__section-about-form-recipe-parameters > fieldset {
-    display: flex;
-    flex-direction: column;
+.main__section-about-form-recipe-parameters > fieldset input {
+    width: 35px;
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid #d6d4d4;
+
 }
+
+.main__section-ingredients-content-list-container {
+    padding-top: 35px;
+}
+
+.main__section-ingredients-content-list-container li i {
+    color: #db4d3f;
+}
+
 
 
