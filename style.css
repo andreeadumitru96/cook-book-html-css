@@ -90,7 +90,7 @@ header .header__title-container {
 
 header .header__form-container {
     display:flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     background-color: white;
     border-bottom: 2px inset #d6d4d4;
@@ -194,6 +194,42 @@ header .header__form-select-recipe-picker > select {
 
 .main__section-ingredients-content-list-container li i {
     color: #db4d3f;
+}
+
+/* .main__section-ingredients-content-form-quantity-container input {
+    width: 50px;
+    border-radius: 3px;
+    border: 1px solid #d6d4d4;
+    padding: 5px 0px 5px 10px;
+    height: 20px;
+} */
+
+.main__section-ingredients-content-form-quantity input{
+    width: 50px;
+    border-radius: 3px;
+    border: 1px solid #d6d4d4;
+    padding: 5px 0px 5px 10px;
+    height: 20px;
+}
+
+.main__section-ingredients-content-form-quantity-type {
+    border: 1px solid #d6d4d4;
+    border-radius: 3px;
+    width: 60px;
+
+}
+
+.main__section-ingredients-content-form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__section-steps-content-list-container li{
+
+}
+
+.footer-container {
+    text-align: center;
 }
 
 
