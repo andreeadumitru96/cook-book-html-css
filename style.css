@@ -140,11 +140,45 @@ header .header__form-select-recipe-picker > select {
     margin: 15px 0px 0px 0px;
 }
 
-.main__standard-section-content--bg--gray {
+.main__standard-section-content {
     background-color: #f6f4f4;
 
 }
 
+.main__standard-section-fieldset {
+    padding-top: 25px;
 
+}
+
+.main__standard-section-fieldset > input, textarea {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 0px 5px 10px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #d6d4d4;
+}
+
+.main__standard-section-content {
+    padding: 0px 25px 0px 25px;
+}
+
+.main__standard-section-fieldset > label {
+    font-weight: bold;
+}
+
+.main__standard-section-fieldset > textarea {
+    height: 100px;
+}
+
+.main__section-about-form-recipe-parameters {
+    flex-direction: row;
+    display: flex;
+}
+
+.main__section-about-form-recipe-parameters > fieldset {
+    display: flex;
+    flex-direction: column;
+}
 
 
