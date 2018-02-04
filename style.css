@@ -326,7 +326,7 @@ body {
     }
 
     .header .form-new-recipe, header .form-select-recipe {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .header .form-new-recipe {
@@ -372,7 +372,7 @@ body {
 
 @media only screen and (min-width: 500px) and (max-width: 699px) {
     .main {
-        width: 95%;
+        width: 96%;
     }
 
     .header .header__title {
@@ -380,7 +380,7 @@ body {
     }
 
     .header .form-new-recipe, .header .form-select-recipe {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .header .form-select-recipe-picker {
@@ -394,7 +394,7 @@ body {
     }
 
     .header .form-new-recipe {
-        padding-top: 24px;
+        padding-top: 20px;
     }
 
     .main__ingredients .ingredients-form-quantity input {
@@ -410,6 +410,49 @@ body {
     }
 
     .footer {
-        width: 95%;
+        width: 96%;
     }
+}
+
+/* 700px */
+
+@media only screen and (min-width: 700px) and (max-width: 960px) {
+    .main {
+        width: 94%;
+    }
+
+    .header .header__title {
+        font-size: 26px;
+    }
+
+     .header .form-new-recipe, .header .form-select-recipe {
+        font-size: 20px;
+    }
+
+     .header .form-select-recipe-picker > select {
+        font-size: 17px;
+        width: 100%;
+        height: 32px;
+    } 
+
+    .header .form-new-recipe {
+        padding-top: 20px;
+    }
+
+    .main__ingredients .ingredients-form-quantity input {
+        width: 70px;
+    }
+
+    .main__ingredients .ingredients-form-unit select {
+        width: 120px;
+    }
+
+    .main__ingredients .ingredients-form-ingredient-type input {
+        width: 230px;
+    }
+
+    .footer {
+        width: 94%;
+    }
+
 }
