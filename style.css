@@ -79,7 +79,7 @@ body {
 
 /* Header section */
 
-header .header__title-container {
+.header__title {
     background-color: #d94e44;
     color: white;
     text-align: center;
@@ -88,7 +88,7 @@ header .header__title-container {
     padding: 15px 0px 15px 0px;
 }
 
-header .header__form-container {
+.header__form {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -97,29 +97,28 @@ header .header__form-container {
     font-size: 20px;
 }
 
-[class*="header__form-"] {
-    display:flex;
-    flex-direction:column;
+.header .form-new-recipe, .form-select-recipe {
+    display: flex;
+    flex-direction: column;
     flex: 1 1;
     text-align: center;
 }
 
-header .header__form-new-recipe-container {
+.header .form-new-recipe {
     color: #db4d3f;
     padding: 15px 0px 15px 0px;
     border-right: 2px inset #d6d4d4;
 }
-
-header .header__form-select-recipe-container {
+.header .form-select-recipe {
     padding: 15px 0px 15px 0px;
 }
 
-header .header__form-select-recipe-picker {
+.header .form-select-recipe-picker {
     width: 200px;
     margin: auto;
 }
 
-header .header__form-select-recipe-picker > select {
+.header .form-select-recipe-picker > select {
     border: 1px solid #d6d4d4;
     border-radius: 3px;
     font-size: 20px;
@@ -127,7 +126,7 @@ header .header__form-select-recipe-picker > select {
 
 /* Main section */
 
-.main-container  {
+.main {
     width: 50%;
     margin: auto;
     padding: 15px 0px 15px 0px;
@@ -135,7 +134,7 @@ header .header__form-select-recipe-picker > select {
 
 .main__standard-section-title--red {
     background-color: #db4d3f;
-    font-size: 18px;
+    font-size: 22px;
     color: white;
     padding: 5px 0px 5px 15px;
     margin: 15px 0px 0px 0px;
@@ -153,7 +152,7 @@ header .header__form-select-recipe-picker > select {
 }
 
 .main__standard-section-fieldset:last-child {
-    padding-top: 25px;
+    padding-bottom: 25px;
 
 }
 
@@ -175,28 +174,29 @@ header .header__form-select-recipe-picker > select {
     height: 100px;
 }
 
-.main__section-about-form-recipe-parameters {
+.main__about .about-form-recipe-parameters {
     display: flex;
     justify-content: space-between;
 }
 
-.main__section-about-form-recipe-parameters > fieldset input {
+.main__about .about-form-recipe-parameters > fieldset input {
     width: 35px;
     padding: 2px;
     border-radius: 3px;
     border: 1px solid #d6d4d4;
+    height: 20px;
 
 }
 
-.main__section-ingredients-content-list-container {
+.main__ingredients .ingredients-list {
     padding-top: 35px;
 }
 
-.main__section-ingredients-content-list-container li i {
+.main__ingredients .ingredients-list li i {
     color: #db4d3f;
 }
 
-/* .main__section-ingredients-content-form-quantity-container input {
+/* .main__section-ingredients-form-quantity-container input {
     width: 50px;
     border-radius: 3px;
     border: 1px solid #d6d4d4;
@@ -204,28 +204,53 @@ header .header__form-select-recipe-picker > select {
     height: 20px;
 } */
 
-.main__section-ingredients-content-form-quantity input{
+.main__ingredients .ingredients-form-quantity input {
     width: 50px;
     border-radius: 3px;
     border: 1px solid #d6d4d4;
     padding: 5px 0px 5px 10px;
-    height: 20px;
+    height: 16px;
 }
 
-.main__section-ingredients-content-form-quantity-type {
-    border: 1px solid #d6d4d4;
-    border-radius: 3px;
-    width: 60px;
-
-}
-
-.main__section-ingredients-content-form-container {
+.main__ingredients .ingredients-form {
     display: flex;
     justify-content: space-between;
+
 }
 
-.main__section-steps-content-list-container li{
+.main__ingredients .ingredients-form select {
+    width: 75px;
+    border-radius: 3px;
+    border: 1px solid #d6d4d4;
+    height: 28px;
+    line-height: 24px;
+    padding: 5px;
+}
+.main__ingredients .ingredients-form-ingredient-type input {
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #d6d4d4;
+    height: 16px;
+    padding: 5px 0px 5px 10px;
+}
 
+.main__ingredients .ingredients-form-add-button {
+    background-color: white;
+    
+
+}
+
+.main__ingredients .ingredients-form-add-button button {
+    background-color: white;
+    border: 1px solid #db4d3f;
+    border-radius: 3px;
+
+}
+
+.main__ingredients .ingredients-form-add-button button i {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #db4d3f;
 }
 
 .footer-container {

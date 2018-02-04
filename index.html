@@ -10,22 +10,22 @@
 
 <body>
 
-    <header>
-        <div class="header__title-container">
+    <header class="header">
+        <div class="header__title">
             <h1>
                 <i class="fa fa-cutlery"> iQuest Cook Book </i>
             </h1>
         </div>
     
-        <nav class="header__form-container">
-            <div class="header__form-new-recipe-container">
+        <nav class="header__form">
+            <div class="form-new-recipe">
                 <h2>
                     <i class="fa fa-plus"></i>
                     New Recipe
                 </h2>
             </div>
-            <div class="header__form-select-recipe-container">
-                <form class="header__form-select-recipe-picker">
+            <div class="form-select-recipe">
+                <form class="form-select-recipe-picker">
                     <select>
                         <option>Select a recipe...</option>
                         <option>Scambled egg omlette</option>
@@ -56,25 +56,25 @@
 
     </header> -->
 
-    <main class="main-container">
-        <section class="main__section-about">
-            <section class="main__section-about-title main__standard-section-title--red" >
+    <main class="main">
+        <section class="main__about">
+            <section class="about-title main__standard-section-title--red" >
                 <i class="fa fa-info"> About </i>
             </section>
             
-            <form class="main__section-about-form-container main__standard-section-content">
-                <fieldset class="main__section-about-form-recipe-title main__standard-section-fieldset">
+            <form class="about-form main__standard-section-content">
+                <fieldset class="about-form-recipe-title main__standard-section-fieldset">
                     <label> Recipe title </label>
                     <input type="text" placeholder="Title">    
                 </fieldset>
 
-                <fieldset class="main__section-about-form-recipe-description main__standard-section-fieldset">
+                <fieldset class="about-form-recipe-description main__standard-section-fieldset">
                     <label> Description </label>
                     <textarea rows="4" cols="50" placeholder="About the recipe"></textarea>
                 </fieldset>
                 
         
-                <div class="main__section-about-form-recipe-parameters main__standard-section-fieldset">
+                <div class="about-form-recipe-parameters main__standard-section-fieldset">
                     <fieldset>
                         <label> Portions </label>
                         <input type="number" name="portions" id="portions" min="1" max="10" step="1" value="1">
@@ -94,13 +94,13 @@
             </form>
         </section>
 
-        <section class="main__section-ingredients-container">
-            <section class="main__section-ingredients-title main__standard-section-title--red">
+        <section class="main__ingredients">
+            <section class="ingredients-title main__standard-section-title--red">
                 <i class="fa fa-list"> Ingredients </i>
             </section>
 
             <section class="main__standard-section-content">
-                <div class="main__section-ingredients-content-list-container">
+                <div class="ingredients-list">
                     <ul>
                         <li><i class="fa fa-angle-double-right"></i> 300g brown rice </li>
                         <li><i class="fa fa-angle-double-right"></i> 2pc red onions </li>
@@ -110,37 +110,36 @@
                     </ul>
                 </div>
 
-                <form class="main__section-ingredients-content-form-container main__standard-section-fieldset">
-                    <div class="main__section-ingredients-content-form-quantity">
+                <form class="ingredients-form main__standard-section-fieldset">
+                    <div class="ingredients-form-quantity">
                         <input type="number" min="1" placeholder="Qty.">
                     </div>
-                    <div class="main__section-ingredients-content-form-quantity-type">
+                    <div class="ingredients-form-unit">
                         <select>
-                            <optgroup>
-                                <option selected> Unit </option>
-                                <option> g </option>
-                                <option> Kg </option>
-                                <option> pc </option>
-                                <option> ml </option>
-                                <option> l </option>
-                                <option> tea spoon(s) </option>
-                            </optgroup>
+                            <option selected> Unit </option>
+                            <option> g </option>
+                            <option> Kg </option>
+                            <option> pc </option>
+                            <option> ml </option>
+                            <option> l </option>
+                            <option> tea spoon(s) </option>
                         </select>
                     </div>
 
-                    <div>
-                        <h1> of </h1>
-                    </div>
-
-                    <div class "main__section-ingredients-content-form-quantity-ingredient">
+                    <div class="ingredients-form-ingredient-type">
                         <input type="text" placeholder="Ingredient">
                     </div>
+
+                    <div class="ingredients-form-add-button">
+                        <button type="button"> <i class="fa fa-plus-square"></i></button>
+                    </div>
+
                 </form>
             </section>
         </section>
 
-        <section class="main__section-steps-container">
-            <section class="main__section-steps-title main__standard-section-title--red">
+        <section class="main__steps">
+            <section class="steps-title main__standard-section-title--red">
                 <i class="fa fa-list-ol"> Steps </i>
             </section>
 
