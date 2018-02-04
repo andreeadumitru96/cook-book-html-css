@@ -253,14 +253,40 @@ body {
     color: #db4d3f;
 }
 
-.main__steps .main__steps-list ol{
-    padding: 40px;
+.main__steps .steps-list ol{
+    padding-left: 40px;
     list-style-type: decimal;
 }
 
-.footer-container {
+.main__steps .steps-list ol li {
+    padding-bottom: 15px;
+}
+
+.main__steps .steps-add-button button{
+    background-color: white;
+    border: none;
+    color: #db4d3f;
+    width: 100%;
+}
+
+.main__steps .steps-add-button {
+    background-color: white;
+    border: 1px solid #db4d3f;
+    border-radius: 3px;
+}
+
+.main__steps .steps-add-button button i {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #db4d3f;
+}
+
+/* Footer section */
+.footer {
     text-align: center;
 }
+
+
 
 
 

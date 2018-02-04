@@ -70,24 +70,24 @@
 
                 <fieldset class="about-form-recipe-description main__standard-section-fieldset">
                     <label> Description </label>
-                    <textarea rows="4" cols="50" placeholder="About the recipe"></textarea>
+                    <textarea placeholder="About the recipe"></textarea>
                 </fieldset>
                 
         
                 <div class="about-form-recipe-parameters main__standard-section-fieldset">
                     <fieldset>
                         <label> Portions </label>
-                        <input type="number" name="portions" id="portions" min="1" max="10" step="1" value="1">
+                        <input type="number" min="1" max="10" step="1" value="1">
                     </fieldset>
                     
                     <fieldset>
                         <label> Time(mins) </label>
-                        <input type="number" name="time" id="time" min="5" max="120" step="5" value="5">
+                        <input type="number" min="5" max="120" step="5" value="5">
                     </fieldset>
 
                     <fieldset>
                         <label> Dificulty </label>
-                        <input type="number" name="dificulty" id="dificulty" min="1" max="5" step="1" value="1">
+                        <input type="number" min="1" max="5" step="1" value="1">
                     </fieldset>   
                     
                 </div>   
@@ -143,8 +143,8 @@
                 <i class="fa fa-list-ol"> Steps </i>
             </section>
 
-            <section class="main__standard-section">
-                <div class="main__steps-list">
+            <section class="main__standard-section-content main__standard-section-fieldset">
+                <div class="steps-list">
                     <ol>
                         <li> Cook the rice in a pan of boiling salted water according to the packet instructions, then drain and refresh under cold water,leaving it in the colander. </li>
                         <li> At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes,then carefully remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer. </li>
@@ -152,10 +152,23 @@
                     </ol>
                 </div>
             </section>
+
+            <section class="steps-form-description main__standard-section-content">
+                <form>
+                    <fieldset class="main__standard-section-fieldset">
+                        <label> Step </label>
+                        <textarea placeholder="Step description"></textarea>
+
+                        <div class="steps-add-button main__standard-section-content">
+                            <button type="button"> <i class="fa fa-plus-square"></i> Add step </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
         </section>
     </main>
-    <footer class="footer-container">           
-        <button class="footer__button-cancel" ><i class="fa fa-trash-o"></i> Cancel </button>
+    <footer class="footer">           
+        <button class="footer__button-cancel"><i class="fa fa-trash-o"></i> Cancel </button>
         <button class="footer__butoon-save-recipe"><i class="fa fa-floppy-o"></i> Save recipe </button>
             
     </footer>
