@@ -223,6 +223,10 @@ body {
     color: #db4d3f;
 }
 
+.main__ingredients .ingredients-form-of {
+    padding-top: 6px;
+}
+
 .main__steps .steps-list ol{
     padding-left: 40px;
     list-style-type: decimal;
