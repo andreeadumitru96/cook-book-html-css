@@ -253,6 +253,11 @@ body {
     color: #db4d3f;
 }
 
+.main__steps .main__steps-list ol{
+    padding: 40px;
+    list-style-type: decimal;
+}
+
 .footer-container {
     text-align: center;
 }
