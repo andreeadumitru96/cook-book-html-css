@@ -474,3 +474,26 @@ body {
     }
 
 }
+
+/*Due to lack of support for <main> tag in IE, we have to use the following work-around*/
+
+ /* IE10+ */
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    main { 
+        display: block; 
+    }
+ }
+
+ /* IE6,7,9,10 */
+ @media screen and (min-width: 320px), screen\9 {
+    main { 
+        display: block; 
+    }
+ }
+
+ /* IE8 */
+ @media \0screen {
+    main { 
+        display: block; 
+    }
+ }
