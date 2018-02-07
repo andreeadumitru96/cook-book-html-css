@@ -1,217 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta utf-8>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <title> Cook Book </title>
-</head>
+    <head>
+        <meta utf-8>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title> Cook Book </title>
+    </head>
 
-<body>
+    <body>
 
-    <header class="header">
-        <div class="header__title">
-            <h1>
+        <header class="header">
+            <div class="header__title">
                 <i class="fa fa-cutlery"> iQuest Cook Book </i>
-            </h1>
-        </div>
-    
-        <nav class="header__form">
-            <div class="form-new-recipe">
-                <h2>
-                    <i class="fa fa-plus"></i>
-                    New recipe
-                </h2>
             </div>
-            <div class="form-select-recipe">
-                <form class="form-select-recipe-picker">
-                    <select>
-                        <option>Select a recipe...</option>
-                        <option>Scambled egg omlette</option>
-                    </select>
-                </form>
-            </div>
-        </nav>
+        
+            <nav class="header__form">
+                <div class="form-new-recipe">
+                    <i class="fa fa-plus"> New recipe </i>
+                </div>
+
+                <div class="form-select-recipe">
+                    <form class="form-select-recipe-picker">
+                        <select>
+                            <option>Select a recipe...</option>
+                            <option>Scambled egg omlette</option>
+                        </select>
+                    </form>
+                </div>
+            </nav>   
         </header>
-    
-    <!-- <header>
-        <article class="header__title-container">
-            <i class="fa fa-cutlery"> iQuest Cook Book </i>  
-        </article>
-    
-        <nav class="header__nav-container">
-            <form class="header__nav-new-recipe">
-                <i class="fa fa-plus"> New recipe </i>
-            </form>
-            
-            <form class="header__nav-select-recipe">
-                <select>
-                    <option selected> Select a recipe... </option>
-                    <option> Scambled egg omlette </option>     
-                </select>
-            </form>
-            
-        </nav>
 
-    </header> -->
-
-    <main class="main">
-        <section class="main__about">
-            <section class="about-title main__standard-section-title--red" >
-                <i class="fa fa-info"> About </i>
-            </section>
-            
-            <form class="about-form main__standard-section-content">
-                <fieldset class="about-form-recipe-title main__standard-section-fieldset">
-                    <label> Recipe title </label>
-                    <input type="text" placeholder="Title">    
-                </fieldset>
-
-                <fieldset class="about-form-recipe-description main__standard-section-fieldset">
-                    <label> Description </label>
-                    <textarea placeholder="About the recipe"></textarea>
-                </fieldset>
+        <main class="main">
+            <section class="main__about">
+                <section class="about-title main__standard-section-title--red" >
+                    <i class="fa fa-info"> About </i>
+                </section>
                 
-        
-                <div class="about-form-recipe-parameters main__standard-section-fieldset">
-                    <fieldset>
-                        <label> Portions </label>
-                        <select>
-                            <option selected> 1 </option>
-                            <option> 2 </option>
-                            <option> 3 </option>
-                            <option> 4 </option>
-                            <option> 5 </option>
-                            <option> 6 </option>
-                            <option> 7 </option>
-                            <option> 8 </option>
-                            <option> 9 </option>
-                            <option> 10 </option>
-                        </select>
-                    </fieldset>
-                    
-                    <fieldset>
-                        <label> Time(mins) </label>
-                        <select>
-                            <option selected> 5 </option>
-                            <option> 10 </option>
-                            <option> 15 </option>
-                            <option> 20 </option>
-                            <option> 30 </option>
-                            <option> 45 </option>
-                            <option> 60 </option>
-                            <option> 90 </option>
-                            <option> 120 </option>
-                        </select>
+                <form class="about-form main__standard-section-content">
+                    <fieldset class="about-form-recipe-title main__standard-section-fieldset">
+                        <label> Recipe title </label>
+                        <input type="text" placeholder="Title">    
                     </fieldset>
 
-                    <fieldset>
-                        <label> Dificulty </label>
-                        <select>
-                            <option selected> 1 </option>
-                            <option> 2 </option>
-                            <option> 3 </option>
-                            <option> 4 </option>
-                            <option> 5 </option>
-                        </select>
-                    </fieldset>   
+                    <fieldset class="about-form-recipe-description main__standard-section-fieldset">
+                        <label> Description </label>
+                        <textarea placeholder="About the recipe"></textarea>
+                    </fieldset>
                     
-                </div>   
-            </form>
-        </section>
-
-        <section class="main__ingredients">
-            <section class="ingredients-title main__standard-section-title--red">
-                <i class="fa fa-list"> Ingredients </i>
-            </section>
-
-            <section class="main__standard-section-content">
-                <div class="ingredients-list">
-                    <ul>
-                        <li><i class="fa fa-angle-double-right"></i> 300g brown rice </li>
-                        <li><i class="fa fa-angle-double-right"></i> 2pc red onions </li>
-                        <li><i class="fa fa-angle-double-right"></i> 1pc fresh red chilli </li>
-                        <li><i class="fa fa-angle-double-right"></i> 25g unsalted butter </li>
-                        <li><i class="fa fa-angle-double-right"></i> 6pc large free-range eggs </li>
-                    </ul>
-                </div>
-
-                <form class="ingredients-form main__standard-section-fieldset">
-                    <div class="ingredients-form-quantity">
-                        <input type="number" min="1" placeholder="Qty.">
-                    </div>
-                    <div class="ingredients-form-unit">
-                        <select>
-                            <option selected> Unit </option>
-                            <option> g </option>
-                            <option> Kg </option>
-                            <option> pc </option>
-                            <option> ml </option>
-                            <option> l </option>
-                            <option> tea spoon(s) </option>
-                        </select>
+                    <div class="about-form-recipe-parameters main__standard-section-fieldset">
+                        <fieldset>
+                            <label> Portions </label>
+                            <select>
+                                <option selected> 1 </option>
+                                <option> 2 </option>
+                                <option> 3 </option>
+                                <option> 4 </option>
+                                <option> 5 </option>
+                                <option> 6 </option>
+                                <option> 7 </option>
+                                <option> 8 </option>
+                                <option> 9 </option>
+                                <option> 10 </option>
+                            </select>
+                        </fieldset>
                         
-                    </div>
+                        <fieldset>
+                            <label> Time(mins) </label>
+                            <select>
+                                <option selected> 5 </option>
+                                <option> 10 </option>
+                                <option> 15 </option>
+                                <option> 20 </option>
+                                <option> 30 </option>
+                                <option> 45 </option>
+                                <option> 60 </option>
+                                <option> 90 </option>
+                                <option> 120 </option>
+                            </select>
+                        </fieldset>
 
-                    <div class="ingredients-form-of">
-                        <p> of </p>
-                    </div>
-
-                    <div class="ingredients-form-ingredient-type">
-                        <input type="text" placeholder="Ingredient">
-                    </div>
-
-                    <div class="ingredients-form-add-button">
-                        <button type="button"> <i class="fa fa-plus-square"></i></button>
-                    </div>
-
+                        <fieldset>
+                            <label> Dificulty </label>
+                            <select>
+                                <option selected> 1 </option>
+                                <option> 2 </option>
+                                <option> 3 </option>
+                                <option> 4 </option>
+                                <option> 5 </option>
+                            </select>
+                        </fieldset>          
+                    </div>   
                 </form>
             </section>
-        </section>
 
-        <section class="main__steps">
-            <section class="steps-title main__standard-section-title--red">
-                <i class="fa fa-list-ol"> Steps </i>
-            </section>
+            <section class="main__ingredients">
+                <section class="ingredients-title main__standard-section-title--red">
+                    <i class="fa fa-list"> Ingredients </i>
+                </section>
 
-            <section class="main__standard-section-content main__standard-section-fieldset">
-                <div class="steps-list">
-                    <ol>
-                        <li> Cook the rice in a pan of boiling salted water according to the packet instructions, then drain and refresh under cold water, leaving it in the colander. </li>
-                        <li> At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes, then carefully remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer. </li>
-                        <li> Meanwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel and finely chop the garlic and ginger. Place it all in a large frying pan on a medium heat with 1 tablespoon of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally. </li>
-                    </ol>
-                </div>
-            </section>
+                <section class="main__standard-section-content">
+                    <div class="ingredients-list">
+                        <ul>
+                            <li><i class="fa fa-angle-double-right"></i> 300g brown rice </li>
+                            <li><i class="fa fa-angle-double-right"></i> 2pc red onions </li>
+                            <li><i class="fa fa-angle-double-right"></i> 1pc fresh red chilli </li>
+                            <li><i class="fa fa-angle-double-right"></i> 25g unsalted butter </li>
+                            <li><i class="fa fa-angle-double-right"></i> 6pc large free-range eggs </li>
+                        </ul>
+                    </div>
 
-            <section class="steps-form-description main__standard-section-content">
-                <form>
-                    <fieldset class="main__standard-section-fieldset">
-                        <label> Step </label>
-                        <textarea placeholder="Step description"></textarea>
-
-                        <div class="steps-add-button main__standard-section-content">
-                            <button type="button"> <i class="fa fa-plus-square"></i> Add step </button>
+                    <form class="ingredients-form main__standard-section-fieldset">
+                        <div class="ingredients-form-quantity">
+                            <input type="number" min="1" placeholder="Qty.">
                         </div>
-                    </fieldset>
-                </form>
-            </section>
-        </section>
-    </main>
-    <footer class="footer"> 
-        <section class="footer__recipe-control">
-            <div class="recipe-control-button-cancel">
-                <button type="button"><i class="fa fa-trash-o"></i> Cancel </button>
-            </div> 
-                
-            <div class="recipe-control-button-save-recipe">
-                <button type="button"><i class="fa fa-floppy-o"></i> Save recipe </button>
-            </div>
-        </section>
-        
-            
-    </footer>
-</body>
 
+                        <div class="ingredients-form-unit">
+                            <select>
+                                <option selected> Unit </option>
+                                <option> g </option>
+                                <option> Kg </option>
+                                <option> pc </option>
+                                <option> ml </option>
+                                <option> l </option>
+                                <option> tea spoon(s) </option>
+                            </select>
+                            
+                        </div>
+
+                        <div class="ingredients-form-of">
+                            <p> of </p>
+                        </div>
+
+                        <div class="ingredients-form-ingredient-type">
+                            <input type="text" placeholder="Ingredient">
+                        </div>
+
+                        <div class="ingredients-form-add-button">
+                            <button type="button"> <i class="fa fa-plus-square"></i></button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+
+            <section class="main__steps">
+                <section class="steps-title main__standard-section-title--red">
+                    <i class="fa fa-list-ol"> Steps </i>
+                </section>
+
+                <section class="main__standard-section-content main__standard-section-fieldset">
+                    <div class="steps-list">
+                        <ol>
+                            <li> Cook the rice in a pan of boiling salted water according to the packet instructions, then drain and refresh under cold water, leaving it in the colander. </li>
+                            <li> At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes, then carefully remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer. </li>
+                            <li> Meanwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel and finely chop the garlic and ginger. Place it all in a large frying pan on a medium heat with 1 tablespoon of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally. </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="steps-form-description main__standard-section-content">
+                    <form>
+                        <fieldset class="main__standard-section-fieldset">
+                            <label> Step </label>
+                            <textarea placeholder="Step description"></textarea>
+
+                            <div class="steps-add-button main__standard-section-content">
+                                <button type="button"> <i class="fa fa-plus-square"></i> Add step </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer"> 
+            <section class="footer__recipe-control">
+                <div class="recipe-control-button-cancel">
+                    <button type="button"><i class="fa fa-trash-o"></i> Cancel </button>
+                </div> 
+                    
+                <div class="recipe-control-button-save-recipe">
+                    <button type="button"><i class="fa fa-floppy-o"></i> Save recipe </button>
+                </div>
+            </section>   
+        </footer>
+
+    </body>
 </html>
