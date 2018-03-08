@@ -98,7 +98,7 @@ body {
     margin: auto;
 }
 
-.header .form-select-recipe-picker > select {
+.header .form-select-recipe-picker-options {
     border: 1px solid #d6d4d4;
     border-radius: 3px;
     font-size: 20px;
@@ -125,21 +125,19 @@ body {
     padding: 0px 25px 0px 25px;
 
 }
-.main .main__standard-section-content label {
+.main__standard-section-label  {
     font-size: 14px;
 }
 
 .main__standard-section-fieldset {
     padding-top: 25px;
-
 }
 
 .main__standard-section-fieldset:last-child {
     padding-bottom: 25px;
-
 }
 
-.main__standard-section-fieldset > input, textarea {
+.main__standard-section-input, .main__standard-section-textarea {
     display: block;
     margin-top: 10px;
     padding: 5px 0px 5px 10px;
@@ -150,11 +148,11 @@ body {
 }
 
 
-.main .main__standard-section-fieldset textarea {
+.main__standard-section-textarea {
     height: 100px;
 }
 
-.main__standard-section-fieldset label {
+.main__standard-section-label {
     font-weight: bold;
 }
 
@@ -163,39 +161,36 @@ body {
     justify-content: space-between;
 }
 
-.main__about .about-form-recipe-parameters select {
+.main__about .about-form-recipe-parameters-select--standard {
     padding: 5px 0px 5px 10px;
     border-radius: 3px;
     border: 0px;
     box-sizing: border-box;
     width: 44px;
-
 }
 
-
-.main__about .about-form-recipe-parameters > select {
+.main__about .about-form-recipe-parameters-select--first {
     width: 35px;
     padding: 2px;
     border-radius: 3px;
     border: 0px;
     height: 28px;
-
 }
 
 .main__ingredients .ingredients-list {
     padding-top: 35px;
 }
 
-.main__ingredients .ingredients-list li {
+.main__ingredients .ingredients-list-item {
     padding-left: 15px;
     padding-bottom: 10px;
 }
 
-.main__ingredients .ingredients-list li i {
+.main__ingredients .ingredients-list-item .fa-angle-double-right {
     color: #db4d3f;
 }
 
-.main__ingredients .ingredients-form-quantity input {
+.main__ingredients .ingredients-form-quantity-input {
     width: 50px;
     border-radius: 3px;
     border: 0px;
@@ -206,10 +201,9 @@ body {
 .main__ingredients .ingredients-form {
     display: flex;
     justify-content: space-between;
-
 }
 
-.main__ingredients .ingredients-form-unit select {
+.main__ingredients .ingredients-form-unit-select {
     width: 75px;
     border-radius: 3px;
     border: 0px;
@@ -217,7 +211,7 @@ body {
     line-height: 24px;
     padding: 5px;
 }
-.main__ingredients .ingredients-form-ingredient-type input {
+.main__ingredients .ingredients-form-ingredient-type-input {
     width: 200px;
     border-radius: 3px;
     border: 0px;
@@ -225,20 +219,17 @@ body {
     padding: 5px 5px 5px 10px;
 }
 
-.main__ingredients .ingredients-form-add-button {
-    background-color: white;
-    
-
+.main__ingredients .ingredients-form-add {
+    background-color: white;   
 }
 
-.main__ingredients .ingredients-form-add-button button {
+.main__ingredients .ingredients-form-add-button {
     background-color: white;
     border: 1px solid #db4d3f;
     border-radius: 3px;
-
 }
 
-.main__ingredients .ingredients-form-add-button button i {
+.main__ingredients .ingredients-form-add-button .fa-plus-square {
     padding-top: 5px;
     padding-bottom: 5px;
     color: #db4d3f;
@@ -248,31 +239,31 @@ body {
     padding-top: 7px;
 }
 
-.main__steps .steps-list ol{
+.main__steps .steps-list-ol{
     padding-left: 20px;
     list-style-type: decimal;
 }
 
-.main__steps .steps-list ol li {
+.main__steps .steps-list-item {
     padding-bottom: 15px;
     line-height: 1.5;
 }
 
-.main__steps .steps-add-button button {
+.main__steps .steps-add-button {
     background-color: white;
     border: none;
     color: #db4d3f;
     width: 100%;
 }
 
-.main__steps .steps-add-button {
+.main__steps .steps-add {
     background-color: white;
     border: 1px solid #db4d3f;
     border-radius: 3px;
     margin-top: 15px;
 }
 
-.main__steps .steps-add-button button i {
+.main__steps .steps-add-button .fa-plus-square {
     padding-top: 5px;
     padding-bottom: 5px;
     margin: auto;
@@ -287,7 +278,7 @@ body {
     margin-bottom: 50px;
 }
 
-.footer .recipe-control-button-cancel button {
+.footer .recipe-control-cancel-button {
     width: 100%;
     height: 30px;
     background-color: white;
@@ -296,7 +287,7 @@ body {
     color: #db4d3f;
 }
 
-.footer .recipe-control-button-save-recipe button {
+.footer .recipe-control-save-recipe-button {
     width: 100%;
     height: 30px;
     border: 1px solid #db4d3f;
@@ -305,14 +296,12 @@ body {
     color: white;
 }
 
-.footer .recipe-control-button-save-recipe {
+.footer .recipe-control-save-recipe {
     width: 50%; 
- 
 }
 
-.footer .recipe-control-button-cancel {
-    width: 50%;
-    
+.footer .recipe-control-cancel {
+    width: 50%;    
 }
 
 .footer .footer__recipe-control {
@@ -349,7 +338,7 @@ body {
         width: 140px;
     }
 
-    .header .form-select-recipe-picker > select {
+    .header .form-select-recipe-picker-options {
         font-size: 14px;
         width: 100%;
         height: 30px;
@@ -357,7 +346,7 @@ body {
     .main__about .about-form-recipe-parameters {
         padding-right: 35px;
     }
-    .main__about .about-form-recipe-parameters select {
+    .main__about .about-form-recipe-parameters-select--standard {
         display: block;
     }
 
@@ -365,15 +354,15 @@ body {
         display: none;
     }
 
-    .main__ingredients .ingredients-form-quantity input {
+    .main__ingredients .ingredients-form-quantity-input {
         width: 45px;
     }
 
-    .main__ingredients .ingredients-form-unit select {
+    .main__ingredients .ingredients-form-unit-select {
         width: 60px;
     }
 
-    .main__ingredients .ingredients-form-ingredient-type input {
+    .main__ingredients .ingredients-form-ingredient-type-input {
         width: 120px;
     }
 
@@ -405,7 +394,7 @@ body {
         width: 160px;
     }
 
-    .header .form-select-recipe-picker > select {
+    .header .form-select-recipe-picker-options {
         font-size: 16px;
         width: 100%;
         height: 30px;
@@ -415,15 +404,15 @@ body {
         padding-top: 20px;
     }
 
-    .main__ingredients .ingredients-form-quantity input {
+    .main__ingredients .ingredients-form-quantity-input {
         width: 55px;
     }
 
-    .main__ingredients .ingredients-form-unit select {
+    .main__ingredients .ingredients-form-unit-select {
         width: 80px;
     }
 
-    .main__ingredients .ingredients-form-ingredient-type input {
+    .main__ingredients .ingredients-form-ingredient-type-input {
         width: 160px;
     }
 
@@ -447,7 +436,7 @@ body {
         font-size: 20px;
     }
 
-     .header .form-select-recipe-picker > select {
+     .header .form-select-recipe-picker-options {
         font-size: 17px;
         width: 100%;
         height: 32px;
@@ -457,15 +446,15 @@ body {
         padding-top: 20px;
     }
 
-    .main__ingredients .ingredients-form-quantity input {
+    .main__ingredients .ingredients-form-quantity-input {
         width: 70px;
     }
 
-    .main__ingredients .ingredients-form-unit select {
+    .main__ingredients .ingredients-form-unit-select {
         width: 120px;
     }
 
-    .main__ingredients .ingredients-form-ingredient-type input {
+    .main__ingredients .ingredients-form-ingredient-type-input {
         width: 230px;
     }
 
